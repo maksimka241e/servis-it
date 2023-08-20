@@ -1,0 +1,1755 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root {
+    --colors-1:#FFFFFF;
+    --colors-2:#2E2BD0;
+    --colors-3:#2F353F;
+    --colors-4:#9695E7;
+    --colors-5:#95989D;
+    --colors-6:#C1C2C5;
+    --background-1:#2F353F;
+    --backgroud-2:#2E2BD0;
+    --backgroud-3:#FFFFFF;
+}
+.navigator-cont{
+    width: 100%;
+    max-width: 1920px;
+    height: 700px;
+}
+.navigator-logo{
+    padding-left: 30px;
+    padding-top: 28px;
+}
+.navigator-line{
+    margin-top: 30px;
+    margin-left: 30px;
+    max-width: 1230px;
+    width:100%;
+}
+.navigator-line1{
+    margin-top: -90px;
+    margin-left: 800px;
+}
+/* ссылки на следущие сайты */
+#navibtn{
+    display: none;
+}
+#NavibtnNe{
+    display: none;
+}
+.navigator-menu{
+    width: 100%;
+    max-width: 800px;
+    margin-top: -40px;
+    padding-left: 340px;
+}
+.about-nav{
+    font-size: 24px;
+    color: var(--colors-1);
+    text-decoration: none;
+}
+.our-nav{
+    padding-left: 40px;
+    font-size: 24px;
+    color: var(--colors-1);
+    text-decoration: none;
+}
+.job-nav{
+    padding-left: 40px;
+    font-size: 24px;
+    color: var(--colors-1);
+    text-decoration: none;
+}
+.about-nav:hover{
+    transition: 0.3s;
+    color: var(--colors-2);
+}
+.our-nav:hover{
+    transition: 0.3s;
+    color: var(--colors-2);
+}
+.job-nav:hover{
+    transition: 0.3s;
+    color: var(--colors-2);
+}
+/* меню чтоб менять язык */
+#google_translate_element{
+    margin-top: -60px;
+    margin-left: 840px;
+}
+/* кнопка */
+.nav-btn{
+    background: var(--backgroud-2);
+    color: var(--colors-1);
+    padding-right: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor:pointer;
+    width: 170px;
+    height: 35px;
+    font-size: 20px; 
+}
+.nav-btn:hover{
+    background: var(--background-1);
+    transition: 0.3s;
+}
+.nav-btn-img {
+    position: absolute;
+    padding-left: 5px;
+}
+.navigator-btn{
+    width: 170px;
+    margin-top: -45px;
+    margin-left: 1060px;
+}
+/* модальное окно */
+.navigatorModal{
+    max-width: 1230px;
+    margin-top: -90px;
+    display: none;
+    position: fixed;
+    background: var(--backgroud-2);
+    width: 100%;
+    height: 580px;
+    margin-left: 30px;
+    border-radius: 30px;
+}
+#navBtn-no{
+    margin-top: 5px;
+    position: absolute;
+    margin-left: 1195px;
+    font-size: 25px;
+    cursor: pointer;  
+    color: var(--colors-1);
+}
+#navBtn-no:hover{
+    transition: 0.3s;
+    color: var(--colors-3);
+}
+.modal-nav{
+    margin-top: 70px;
+    margin-left: 100px;
+    width: 500px;
+    font-size: 70px;
+    color: var(--colors-1);
+}
+.input-nav{
+    height: 40px;
+    cursor: pointer;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom:1px solid var(--colors-1);
+    background: var(--backgroud-2);
+    width: 400px;
+    color: var(--colors-1);
+    margin-top: 20px;
+    margin-left: 105px;
+    outline:none;
+
+}
+.input-nav1{
+    height: 40px;
+    cursor: pointer;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom:1px solid var(--colors-1);
+    background: var(--backgroud-2);
+    width: 400px;
+    color: var(--colors-1);
+    margin-top: 20px;
+    margin-left: 105px;
+    outline:none;
+}
+.input-nav2{
+    height: 40px;
+    cursor: pointer;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom:1px solid var(--colors-1);
+    background: var(--backgroud-2);
+    width: 400px;
+    color: var(--colors-1);
+    margin-top: 20px;
+    margin-left: 105px;
+    outline:none;
+}
+.input-nav3{
+    height: 40px;
+    cursor: pointer;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom:1px solid var(--colors-1);
+    background: var(--backgroud-2);
+    width: 400px;
+    color: var(--colors-1);
+    margin-top: 20px;
+    margin-left: 105px;
+    outline:none;
+}
+.input-nav4{
+    height: 40px;
+    cursor: pointer;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom:1px solid var(--colors-1);
+    background: var(--backgroud-2);
+    width: 400px;
+    color: var(--colors-1);
+    margin-top: 20px;
+    margin-left: 105px;
+    outline:none;
+}
+.modal-nav-p{
+    color: var(--colors-1);
+    position: absolute;
+    margin-top: -140px;
+    margin-left: 613px;
+    width: 450px;
+}
+.nav-span{
+    border-bottom: 1px solid var(--colors-1);
+    color: var(--colors-6);
+    cursor: pointer;
+}
+.nav-span:hover{
+    transition: 0.5s;
+    color: var(--colors-4);
+}
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.65);
+    z-index: 2;
+    animation: fade .6s;
+    overflow: auto;
+}
+.nav-btn1{
+    background: var(--backgroud-2);
+    color: var(--colors-1);
+    padding-right: 20px;
+    border: 1px solid var(--colors-1);
+    border-radius: 10px;
+    cursor:pointer;
+    width: 230px;
+    height: 35px;
+    font-size:15px; 
+}
+.nav-btn1:hover{
+    background: var(--colors-4);
+    transition: 0.3s;
+}
+.nav-btn-image1 {
+    width: 15px;
+    padding-top: 1px;
+    position: absolute;
+    margin-left: 5px;
+}
+.navi-block-1{
+    margin-top: -25px;
+    margin-left: 613px;
+}
+.navi-block-2{
+   position: absolute;
+   margin-left: 105px;
+   margin-top: 200px;
+}
+.img-nav1{
+    position: absolute;
+}
+.navBtnNet-1{
+    padding-right: 20px;
+    font-size: 20px;
+    color: var(--colors-2);
+    border: 1px solid var(--colors-1);
+    border-radius: 10px;
+    height: 35px;
+    width: 160px;
+    cursor: pointer;
+}
+/* название */
+.title-nav1{
+    margin-top: 150px;
+    font-size: 30px;
+    margin-left: 140px;
+    color: var(--colors-1);
+    width: 460px;  
+    background: var(--backgroud-2);
+}
+/* кнопка */
+.nav-btn-2{
+    border: 1px solid var(--colors-1);
+    color: var(--colors-1);
+    background: none;
+    margin-top: 100px;
+    margin-left: 140px;
+    border-radius:100px;
+    font-size: 25px;
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+}
+.nav-btn-2:hover{
+    transition: 0.3s;
+    color: var(--colors-2);
+}
+/* второе модальное окно */
+.navigatorModal2{
+    max-width: 830px;
+    margin-top: -550px;
+    display: none;
+    position: fixed;
+    background: var(--backgroud-2);
+    width: 100%;
+    height: 480px;   
+    border-radius: 20px;
+    margin-left: 230px;
+    background:var(--backgroud-2) ;
+}
+#navBtnNo2{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    color: var(--colors-1);
+}
+#navBtnNo2:hover{
+    transition: 0.3s;
+    color: var(--colors-3);
+}
+.navigator-modal-p2{
+    margin-top: 140px;
+    font-size: 20px;
+    margin-left: 400px;
+    color: var(--colors-1);
+}
+#navBtnNet2{
+    margin-top: 30px;
+    margin-left: 480px;
+    position: absolute;
+    font-size: 20px;
+    color: var(--colors-4);
+}
+#navBtnNet2:hover{
+    transition: 0.3s;
+    color: var(--colors-1);
+}
+.p-nav{
+    margin-top: 55px;
+    font-size: 25px;
+    margin-left: 515px;
+    color: var(--colors-1);
+    position: absolute;
+}
+.nav-a{
+    margin-left: 620px;
+    margin-top: 210px;
+    color: var(--colors-4);
+    cursor: pointer;
+    position: absolute;
+}
+.nav-a:hover{
+    transition: 0.3s;
+    color: var(--colors-1);
+}
+.navigator-image2{
+    width: 300px;
+    margin-left: 60px;
+    position: absolute;
+    margin-top: -100px;
+}
+.navigatorModal {
+        opacity: 0;
+        animation: anim 1.5s forwards;
+      }
+      
+      @keyframes anim {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+      }
+
+      .navigatorModal2 {
+        opacity: 0;
+        animation: animm 1.0s forwards;
+      }
+      
+      @keyframes animm {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+      }
+       /*
+      d
+      d
+      d
+      ddferf
+      dfd
+      fd
+      fd
+      e
+      d
+       */
+      /* 
+      /* 
+      e
+      dd
+      d
+      d
+      d
+      d     
+      datad*/
+
+
+/* разрешение под компьютер */
+@media(max-width:1920px){
+    .navigator-line{
+        max-width: 1860px;
+    }
+    .nav-btn{
+        margin-left: 600px;
+    }
+    .navigatorModal{
+        margin-top: 0px;
+        margin-left: 380px;
+    }
+    .navigatorModal2{
+        margin-top: -550px;
+        margin-left: 550px;
+    }
+    #google_translate_element{
+        margin-left: 1340px;
+    }
+    .navigator-line1{
+        margin-left: 1250px;
+    }   
+    .about-nav{
+        font-size: 27px;
+    }
+    .our-nav{
+        padding-left: 60px;
+        font-size: 27px;
+    }  
+    .job-nav{
+        padding-left: 60px;
+        font-size: 27px;
+    }
+    .navigator-menu{
+        max-width: 900px;
+        margin-left: 220px;
+    }
+}
+/* разрешение под компьютер */
+@media(max-width:1600px){
+    .navigator-menu {
+        margin-left: 50px;
+    }
+    .navigator-line{
+        max-width: 1540px;
+    }
+    .nav-btn{
+        margin-left: 250px;
+    }
+    .navigatorModal{
+        margin-top: -55px;
+        margin-left: 190px;
+    }
+    .navigatorModal2{
+        margin-top: -550px;
+        margin-left: 430px;
+    }
+    #google_translate_element{
+        margin-left: 1000px;
+    }
+    .navigator-line1{
+        margin-left: 950px;
+    }
+    .our-nav{
+        padding-left: 60px;
+    }
+    .job-nav{
+        padding-left: 60px;
+    }
+}
+/* разрешение под компьютер */
+@media(max-width:1440px){
+    .navigator-line{
+        max-width: 1380px;
+    }
+    .navigator-line1 {
+        margin-left: 850px;
+    }
+    .nav-btn{
+        margin-left: 50px;
+    }
+    .navigatorModal{
+        margin-top: -85px;
+        margin-left: 105px;
+    }
+    .navigatorModal2{
+        margin-top: -550px;
+        margin-left: 300px;
+    }
+    .navigator-menu {
+        margin-left: 20px;
+    }
+    #google_translate_element {
+        margin-left: 880px;
+    }
+}
+/* разрешение под компьютер */
+@media(max-width:1366px){
+    .navigator-line{
+        max-width: 1310px;
+    }
+    .navigator-line1{
+        margin-left: 850px;
+    }
+    .navigator-menu{
+        margin-left:10px;
+    }
+    .nav-btn{
+        margin-left: 30px;
+    }
+    .navigatorModal{
+        margin-top: -115px;
+        margin-left: 70px;
+    }
+    .navigatorModal2{
+        margin-top: -580px;
+        margin-left: 300px;
+    }
+    #google_translate_element {
+        margin-left: 880px;
+    }
+}
+/* разрешение под компьютер */
+@media(max-width:1350px){
+    .navigator-line{
+        max-width: 1260px;
+    }
+    .navigator-menu{
+        margin-left:-20px;
+    }
+    .navigatorModal{
+        margin-top: -85px;
+        margin-left: 45px;
+    }
+    .navigatorModal2{
+        margin-top: -540px;
+        margin-left: 270px;
+    }
+}
+/* разрешение под компьютер */
+@media(max-width:1350px){
+    .navigator-line{
+        max-width: 1230px;
+    }
+    .navigator-menu{
+        margin-left:-20px;
+    }
+    .navigatorModal{
+        margin-top: -85px;
+        margin-left: 45px;
+    }
+    .navigatorModal2{
+        margin-top: -540px;
+        margin-left: 270px;
+    }
+}
+/* разрешение под ноутбук */
+@media(max-width:1024px){
+    #google_translate_element{
+       display: none;
+    }
+    .navigator-btn{
+        margin-top: -65px;
+        margin-left: 830px;
+    }
+    .navigator-line{
+        margin-top:30px;
+        max-width: 970px;
+    }
+    .navigator-line1{
+        margin-left: 800px;
+    }
+    .navigatorModal{
+        margin-top: -115px;
+        margin-left: 10px;
+        max-width: 1005px;
+        height: 550px;
+    }
+    .modal-nav-p{
+        margin-left: 535px;
+    }
+    .navBtnNet-1{
+        margin-left: 550px;
+    }
+    #navBtn-no{
+        margin-left: 970px;
+    }
+    .navi-block-2{
+        width: 400px;
+    }
+    .navigatorModal2{
+        margin-top: -600px;
+        margin-left: 100px;
+    }
+    .navigator-btn{
+        margin-left: 800px;
+    }
+}
+/* разрешение под ноутбук */
+@media(max-width:912px){
+    .navigator-menu{
+        padding-left: 260px;
+    }
+    .navigator-line1{
+        margin-left: 710px;
+    }
+    .navigator-btn{
+        margin-left: 705px;
+    }
+    .navigator-line{
+        max-width: 860px;
+    }
+    .navigatorModal2{
+        margin-left: 40px;
+    }
+    .navigatorModal{
+        margin-top: -115px;
+        margin-left: 10px;
+        max-width: 890px;
+        height: 530px;
+    }
+    .modal-nav{
+        width: 240px;
+        font-size: 40px;
+    }
+    .input-nav{
+        width:250px;
+    }
+    .input-nav1{
+        width: 250px;
+    }
+    .input-nav2{
+        width: 250px;
+    }
+    .input-nav3{
+        width: 250px;
+    }
+    .input-nav4{
+        width: 250px;
+    }
+    .modal-nav-p{
+        margin-left: 440px;
+        font-size: 14px;
+        margin-top: 0px;
+        width: 350px;
+    }
+    .nav-btn1{
+        margin-top: 140px;
+        margin-left: -130px;
+    }
+    .navBtnNet-1 {
+        margin-left: 400px;
+    }
+    #navBtn-no{
+        margin-left: 855px;
+    }
+    .navi-block-2{
+        margin-top: 150px;
+    }
+}
+/* разрешение под ноутбук */
+@media(max-width:820px){
+    .navigator-menu{
+        padding-left: 260px;
+    }
+    .navigator-line1{
+        margin-left: 710px;
+    }
+    .navigator-btn{
+        width: 40px;
+        margin-left: 715px;
+    }
+    .navigator-line{
+        max-width: 780px;
+    }
+    .navigatorModal2{
+        margin-left: 20px;
+        max-width: 780px;
+    }
+    .navigatorModal{
+        margin-top: -115px;
+        margin-left: 10px;
+        max-width: 790px;
+        height: 530px;
+    }
+    .modal-nav{
+        width: 240px;
+        font-size: 40px;
+    }
+    .input-nav{
+        width:250px;
+    }
+    .input-nav1{
+        width: 250px;
+    }
+    .input-nav2{
+        width: 250px;
+    }
+    .input-nav3{
+        width: 250px;
+    }
+    .input-nav4{
+        width: 250px;
+    }
+    .modal-nav-p{
+        margin-left: 440px;
+        font-size: 14px;
+        margin-top: 0px;
+        width: 350px;
+    }
+    .nav-btn1{
+        margin-top: 140px;
+        margin-left: -130px;
+    }
+    .navBtnNet-1 {
+        margin-left: 400px;
+    }
+    #navBtn-no{
+        margin-left: 755px;
+    }
+    .nav-btn{
+        width: 40px;
+    }
+    .nav-btn-img {
+        margin-top: -13px;
+        margin-left: -13px;
+        padding-left: 5px;
+    }
+    .navi-block-2{
+        margin-top: 150px;
+    }
+    .nav-a{
+        margin-left: 570px;
+    }
+    .navi-btn-750px{
+        display: none;
+    }
+}
+/* разрешение под ноутбук */
+@media(max-width:768px){   
+    .navigator-logo{
+        width: 200px;
+    }
+    .navigator-menu{
+        padding-left: 220px;
+    }
+    .navigator-line1{
+        margin-left: 670px;
+    }
+    .navigator-btn{
+        width: 40px;
+        margin-left: 670px;
+    }
+    .navigator-line{
+        max-width: 780px;
+    }
+    .navigatorModal2{
+        margin-left: 35px;
+        max-width: 700px;
+    }
+    .navigator-modal-p2{
+        margin-left: 380px;
+        font-size: 16px;
+    }
+    .navi-block-2{
+        margin-left: 515px;
+        width: 100px;
+    }
+    .navigatorModal{
+        margin-top: -100px;
+        margin-left: 10px;
+        max-width: 745px;
+        height: 520px;
+    }
+    .modal-nav{
+        width: 240px;
+        font-size: 40px;
+    }
+    .modal-nav-p{
+        margin-left: 380px;
+        font-size: 14px;
+        margin-top: 0px;
+        width: 350px;
+    }
+    .nav-btn1{
+        margin-top: 140px;
+        margin-left: -130px;
+    }
+    .navBtnNet-1 {
+        margin-left: 0px;
+    }
+    #navBtnNet2 {
+        margin-left: 430px;
+    }
+    #navBtn-no{
+        margin-left: 710px;
+    }
+    .nav-btn{
+        width: 40px;
+    }
+    .nav-btn-img {
+        margin-top: -13px;
+        margin-left: -13px;
+        padding-left: 5px;
+    }
+    .navi-block-2{
+        margin-top: 150px;
+    }
+    .nav-a{
+        margin-top: 230px;
+        margin-left: 490px;
+    }
+    .p-nav {
+        margin-left: 465px;
+    }    
+    .navi-btn-750px{
+        display: none;
+    }
+
+}
+/* стили под телефон */
+@media(max-width:560px){
+    .naviBlockDiv{
+        background: var(--colors-3);
+        display: none;
+        position:absolute;
+        padding-top: 100px;
+        margin-top: -101px;
+        padding-left:20px;
+        margin-left: -5px;
+        max-width:300px;
+        height: 300px;
+        border-radius:30px;
+    }
+    .naviBlockDiv{
+        transform: translateY(-150%);
+        animation: ani 1s forwards;
+      }
+      
+      @keyframes ani {
+        0% {transform: translateY(-150%);}
+        100% {transform: translateY(0);}
+      }
+      /* 
+       /* */ 
+       /*  */
+       /*  */
+/*  */
+       /*  */
+    .navigator-btn{
+        width: 40px;
+        margin-left: 470px;
+    }
+    .about-nav{
+        font-size: 30px;
+        position: absolute;
+        margin-left: 90px;
+        padding-left: 0px;
+        margin-top: 40px;
+    }
+    .our-nav{
+        font-size: 30px;
+        position: absolute;
+        margin-top: 110px;
+        padding-left: 0px;
+        margin-left: 50px;
+    }
+    .job-nav{
+        font-size: 30px;
+        position: absolute;
+        margin-top: 180px;
+        padding-left: 0px;
+        margin-left: 47px;
+    }
+    #navibtn{
+        border-radius: 10px;
+        border: none;
+        width: 40px;
+        background: var(--colors-1);
+        display: block;
+        position: absolute;
+    }
+    #navibtn:hover{
+        color: var(--backgroud-2);
+    }
+    .naviBtnMod{
+        margin-left: 30px;
+        margin-top: -50px;
+    }
+    .nav-btn{
+        margin-top: 16px;
+        margin-left: 0px;
+        width: 40px;
+        height: 40px;
+    }
+    #NavibtnNe{
+        color: var(--colors-1);
+        font-size: 20px;
+        margin-top: -90px;
+        margin-left: 250px;
+        display: block;
+    }
+    .navigator-line{
+        display: none;
+    }
+    .navigator-line1{
+        display: none;
+    }
+    .navigator-logo{
+        width: 200px;
+        margin-top: 35px;
+        margin-left: 180px;
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+    .title-nav1{
+        font-size: 30px;
+        margin-left: 140px;
+        margin-top: 170px;
+        width: 250px;
+    }
+    .title-br{
+        display: none;
+    }
+    .nav-btn-2{
+        margin-left: 165px;
+        margin-top: 50px;
+    }
+    /* modal */
+    .navigatorModal{
+        position: absolute;
+        margin-top: -75px;
+        margin-left: 45px;
+        max-width:450px;
+        height: 675px;
+    }
+    .modal-nav-p{
+        width: 400px;
+        margin-top: 0px;
+        margin-left:30px;
+        font-size: 15px;
+    }
+    .modal-nav{
+        font-size: 40px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    #navBtn-no {
+        margin-left: 415px;
+    }
+    .nav-btn1{
+        margin-top: 180px;
+        margin-left: -470px;
+    }
+    .navi-block-1{
+        margin-top: -35px;
+        margin-left: 500px;
+    }
+    .input-nav{
+        margin-left: 30px;
+        width:380px;
+    }
+    .input-nav1{
+        margin-left: 30px;
+        width: 380px;
+    }
+    .input-nav2{
+        margin-left: 30px;
+        width: 380px;
+    }
+    .input-nav3{
+        margin-left: 30px;
+        width: 380px;
+    }
+    .input-nav4{
+        margin-left: 30px;
+        width: 380px;
+    }
+    .input-nav5{
+        margin-left: 30px;
+        width: 380px;
+    }
+    .navi-block-2{
+        margin-top: 330px;
+        margin-left: 30px;
+    }
+    /* modal2  */
+    .navigatorModal2{
+        position: absolute;
+        margin-top: -610px;
+        margin-left: 50px;
+        max-width: 440px;
+    }
+    .navigator-modal-p2{
+        width:230px;
+        font-size: 13px;
+        margin-top: 130px;
+        margin-left: 190px;
+    }
+    .navigator-image2{
+        margin-left: 30px;
+        margin-top: -70px;
+        width: 150px;
+    }
+    #navBtnNet2 {
+        margin-top: 20px;
+        font-size: 18px;
+        margin-left: 220px;
+    }
+    .p-nav{
+        font-size: 18px;
+        margin-left: 260px;
+    }
+    .nav-a{
+        margin-left: 230px;
+    }
+}
+/* стили под телефон  */
+@media(max-width:480px){
+    .naviBlockDiv{
+        background: var(--colors-3);
+        display: none;
+        position:absolute;
+        padding-top: 100px;
+        margin-top: -101px;
+        padding-left:20px;
+        margin-left: -5px;
+        max-width:300px;
+        height: 300px;
+        border-radius:30px;
+    }
+    .navigator-btn{
+        width: 40px;
+        margin-left: 470px;
+    }
+    .about-nav{
+        font-size: 30px;
+        position: absolute;
+        margin-left: 90px;
+        padding-left: 0px;
+        margin-top: 40px;
+    }
+    .our-nav{
+        font-size: 30px;
+        position: absolute;
+        margin-top: 110px;
+        padding-left: 0px;
+        margin-left: 50px;
+    }
+    .job-nav{
+        font-size: 30px;
+        position: absolute;
+        margin-top: 180px;
+        padding-left: 0px;
+        margin-left: 47px;
+    }
+    #navibtn{
+        border-radius: 10px;
+        border: none;
+        background: var(--colors-1);
+        display: block;
+    }
+    #navibtn:hover{
+        color: var(--backgroud-2);
+    }
+    .naviBtnMod{
+        margin-left: 30px;
+        margin-top: -50px;
+    }
+    .nav-btn{
+        margin-top: 16px;
+        margin-left: -60px;
+        width: 40px;
+        height: 40px;
+    }
+    #NavibtnNe{
+        color: var(--colors-1);
+        font-size: 20px;
+        margin-top: -90px;
+        margin-left: 250px;
+        display: block;
+    }
+    .navigator-line{
+        display: none;
+    }
+    .navigator-line1{
+        display: none;
+    }
+    .navigator-logo{
+            width: 200px;
+            margin-top: 35px;
+            margin-left: 150px;
+            padding-left: 0px;
+            padding-top: 0px;
+    }
+    .title-nav1{
+        font-size: 30px;
+        margin-left: 120px;
+        margin-top: 170px;
+        width: 250px;
+    }
+    .title-br{
+        display: none;
+    }
+    .nav-btn-2{
+        margin-left: 145px;
+        margin-top: 50px;
+    }
+    /* modal */
+    .navigatorModal{
+        position: absolute;
+        margin-top: -75px;
+        margin-left: 6px;
+        max-width:450px;
+        height: 675px;
+    }
+    .modal-nav-p{
+        width: 400px;
+        margin-top: 0px;
+        margin-left:30px;
+        font-size: 15px;
+    }
+    .modal-nav{
+        font-size: 40px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    #navBtn-no {
+        margin-left: 415px;
+    }
+    .nav-btn1{
+        margin-top: 180px;
+        margin-left: -470px;
+    }
+    .navi-block-1{
+        margin-top: -35px;
+        margin-left: 500px;
+    }
+    .input-nav{
+        margin-left: 30px;
+        width:380px;
+    }
+    .input-nav1{
+        margin-left: 30px;
+        width: 380px;
+    }
+    .input-nav2{
+        margin-left: 30px;
+        width: 380px;
+    }
+    .input-nav3{
+        margin-left: 30px;
+        width: 380px;
+    }
+    .input-nav4{
+        margin-left: 30px;
+        width: 380px;
+    }
+    .input-nav5{
+        margin-left: 30px;
+        width: 380px;
+    }
+    .navi-block-2{
+        margin-top: 330px;
+        margin-left: 30px;
+    }
+    /* modal2  */
+    .navigatorModal2{
+        margin-top: -610px;
+        margin-left: 10px;
+        max-width: 440px;
+    }
+    .navigator-modal-p2{
+        width:230px;
+        font-size: 13px;
+        margin-top: 130px;
+        margin-left: 190px;
+    }
+    .navigator-image2{
+        margin-left: 30px;
+        margin-top: -70px;
+        width: 150px;
+    }
+    #navBtnNet2 {
+        margin-top: 20px;
+        font-size: 18px;
+        margin-left: 220px;
+    }
+    .p-nav{
+        font-size: 18px;
+        margin-left: 260px;
+    }
+    .nav-a{
+        margin-left: 230px;
+    }
+}
+
+/* стили под телефон  */
+@media(max-width:425px){
+    .naviBlockDiv{
+        background: var(--colors-3);
+        display: none;
+        position:absolute;
+        padding-top: 100px;
+        margin-top: -101px;
+        padding-left:20px;
+        margin-left: -5px;
+        max-width:300px;
+        height: 300px;
+        border-radius:30px;
+    }
+    .navigator-btn{
+        width: 40px;
+        margin-left: 470px;
+    }
+    .about-nav{
+        font-size: 30px;
+        position: absolute;
+        margin-left: 90px;
+        padding-left: 0px;
+        margin-top: 40px;
+    }
+    .our-nav{
+        font-size: 30px;
+        position: absolute;
+        margin-top: 110px;
+        padding-left: 0px;
+        margin-left: 50px;
+    }
+    .job-nav{
+        font-size: 30px;
+        position: absolute;
+        margin-top: 180px;
+        padding-left: 0px;
+        margin-left: 47px;
+    }
+    #navibtn{
+        border-radius: 10px;
+        border: none;
+        background: var(--colors-1);
+        display: block;
+    }
+    #navibtn:hover{
+        color: var(--backgroud-2);
+    }
+    .naviBtnMod{
+        margin-left: 30px;
+        margin-top: -50px;
+    }
+    .nav-btn{
+        margin-top: 16px;
+        margin-left: -105px;
+        width: 40px;
+        height: 40px;
+    }
+    #NavibtnNe{
+        color: var(--colors-1);
+        font-size: 20px;
+        margin-top: -90px;
+        margin-left: 250px;
+        display: block;
+    }
+    .navigator-line{
+        display: none;
+    }
+    .navigator-line1{
+        display: none;
+    }
+    .navigator-logo{
+            width: 200px;
+            margin-top: 35px;
+            margin-left: 130px;
+            padding-left: 0px;
+            padding-top: 0px;
+    }
+    .title-nav1{
+        font-size: 30px;
+        margin-left: 90px;
+        margin-top: 170px;
+        width: 250px;
+    }
+    .title-br{
+        display: none;
+    }
+    .nav-btn-2{
+        margin-left:115px;
+        margin-top: 50px;
+    }
+    /* modal */
+    .navigatorModal{
+        position: absolute;
+        margin-top: -78px;
+        margin-left: 13px;
+        max-width:400px;
+        height: 675px;
+    }
+    .modal-nav-p{
+        width: 340px;
+        margin-top:10px;
+        margin-left:30px;
+        font-size: 14px;
+    }
+    .modal-nav{
+        font-size: 40px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    #navBtn-no {
+        margin-left: 365px;
+    }
+    .nav-btn1{
+        margin-top: 180px;
+        margin-left: -470px;
+    }
+    .navi-block-1{
+        margin-top: -35px;
+        margin-left: 500px;
+    }
+    .input-nav{
+        margin-left: 30px;
+        width:350px;
+    }
+    .input-nav1{
+        margin-left: 30px;
+        width: 350px;
+    }
+    .input-nav2{
+        margin-left: 30px;
+        width: 350px;
+    }
+    .input-nav3{
+        margin-left: 30px;
+        width: 350px;
+    }
+    .input-nav4{
+        margin-left: 30px;
+        width: 350px;
+    }
+    .input-nav5{
+        margin-left: 30px;
+        width: 350px;
+    }
+    .navi-block-2{
+        margin-top: 330px;
+        margin-left: 30px;
+    }
+    /* modal2  */
+    .navigatorModal2{
+        margin-top: -600px;
+        margin-left: 7px;
+        max-width: 410px;
+    }
+    .navigator-modal-p2{
+        width:230px;
+        font-size: 13px;
+        margin-top: 130px;
+        margin-left: 180px;
+    }
+    .navigator-image2{
+        margin-left: 30px;
+        margin-top: -70px;
+        width: 150px;
+    }
+    #navBtnNet2 {
+        margin-top: 20px;
+        font-size: 18px;
+        margin-left: 210px;
+    }
+    .p-nav{
+        font-size: 18px;
+        margin-left: 250px;
+    }
+    .nav-a{
+        margin-left: 200px;
+    }
+}
+/* стили под телефон  */
+@media(max-width:414px){
+    .naviBlockDiv{
+        background: var(--colors-3);
+        display: none;
+        position:absolute;
+        padding-top: 100px;
+        margin-top: -101px;
+        padding-left:20px;
+        margin-left: -5px;
+        max-width:300px;
+        height: 300px;
+        border-radius:30px;
+    }
+    .navigator-btn{
+        width: 40px;
+        margin-left: 470px;
+    }
+    .about-nav{
+        font-size: 30px;
+        position: absolute;
+        margin-left: 90px;
+        padding-left: 0px;
+        margin-top: 40px;
+    }
+    .our-nav{
+        font-size: 30px;
+        position: absolute;
+        margin-top: 110px;
+        padding-left: 0px;
+        margin-left: 50px;
+    }
+    .job-nav{
+        font-size: 30px;
+        position: absolute;
+        margin-top: 180px;
+        padding-left: 0px;
+        margin-left: 47px;
+    }
+    #navibtn{
+        border-radius: 10px;
+        border: none;
+        background: var(--colors-1);
+        display: block;
+    }
+    #navibtn:hover{
+        color: var(--backgroud-2);
+    }
+    .naviBtnMod{
+        margin-left: 30px;
+        margin-top: -50px;
+    }
+    .nav-btn{
+        margin-top: 16px;
+        margin-left: -105px;
+        width: 40px;
+        height: 40px;
+    }
+    #NavibtnNe{
+        color: var(--colors-1);
+        font-size: 20px;
+        margin-top: -90px;
+        margin-left: 250px;
+        display: block;
+    }
+    .navigator-line{
+        display: none;
+    }
+    .navigator-line1{
+        display: none;
+    }
+    .navigator-logo{
+            width: 200px;
+            margin-top: 35px;
+            margin-left: 130px;
+            padding-left: 0px;
+            padding-top: 0px;
+    }
+    .title-nav1{
+        font-size: 30px;
+        margin-left: 80px;
+        margin-top: 170px;
+        width: 250px;
+    }
+    .title-br{
+        display: none;
+    }
+    .nav-btn-2{
+        margin-left:100px;
+        margin-top: 50px;
+    }
+    /* modal */
+    .navigatorModal{
+        position: absolute;
+        margin-top: -78px;
+        margin-left: 17px;
+        max-width:380px;
+        height: 675px;
+    }
+    .modal-nav-p{
+        width: 340px;
+        margin-top:10px;
+        margin-left:30px;
+        font-size: 14px;
+    }
+    .modal-nav{
+        font-size: 40px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    #navBtn-no {
+        margin-left: 345px;
+    }
+    .nav-btn1{
+        margin-top: 180px;
+        margin-left: -470px;
+    }
+    .navi-block-1{
+        margin-top: -35px;
+        margin-left: 500px;
+    }
+    .input-nav{
+        margin-left: 30px;
+        width:330px;
+    }
+    .input-nav1{
+        margin-left: 30px;
+        width: 330px;
+    }
+    .input-nav2{
+        margin-left: 30px;
+        width: 330px;
+    }
+    .input-nav3{
+        margin-left: 30px;
+        width: 330px;
+    }
+    .input-nav4{
+        margin-left: 30px;
+        width: 330px;
+    }
+    .input-nav5{
+        margin-left: 30px;
+        width: 330px;
+    }
+    .navi-block-2{
+        margin-top: 330px;
+        margin-left: 30px;
+    }
+    /* modal2  */
+    .navigatorModal2{
+        margin-top: -600px;
+        margin-left: 7px;
+        max-width: 390px;
+    }
+    .navigator-modal-p2{
+        width:230px;
+        font-size: 12px;
+        margin-top: 130px;
+        margin-left: 160px;
+    }
+    .navigator-image2{
+        margin-left: 10px;
+        margin-top: -50px;
+        width: 150px;
+    }
+    #navBtnNet2 {
+        margin-top: 20px;
+        font-size: 18px;
+        margin-left: 180px;
+    }
+    .p-nav{
+        font-size: 18px;
+        margin-left: 220px;
+    }
+    .nav-a{
+        margin-top: 260px;
+        margin-left: 180px;
+    }
+}
+/* стили под телефон  */
+@media(max-width:393px){
+    .naviBlockDiv{
+        background: var(--colors-3);
+        display: none;
+        position:absolute;
+        padding-top: 100px;
+        margin-top: -101px;
+        padding-left:20px;
+        margin-left: -5px;
+        max-width:300px;
+        height: 300px;
+        border-radius:30px;
+    }
+    .navigator-btn{
+        width: 40px;
+        margin-left: 470px;
+    }
+    .about-nav{
+        font-size: 30px;
+        position: absolute;
+        margin-left: 90px;
+        padding-left: 0px;
+        margin-top: 40px;
+    }
+    .our-nav{
+        font-size: 30px;
+        position: absolute;
+        margin-top: 110px;
+        padding-left: 0px;
+        margin-left: 50px;
+    }
+    .job-nav{
+        font-size: 30px;
+        position: absolute;
+        margin-top: 180px;
+        padding-left: 0px;
+        margin-left: 47px;
+    }
+    #navibtn{
+        border-radius: 10px;
+        border: none;
+        background: var(--colors-1);
+        display: block;
+    }
+    #navibtn:hover{
+        color: var(--backgroud-2);
+    }
+    .naviBtnMod{
+        margin-left: 30px;
+        margin-top: -50px;
+    }
+    .nav-btn{
+        margin-top: 16px;
+        margin-left: -145px;
+        width: 40px;
+        height: 40px;
+    }
+    #NavibtnNe{
+        color: var(--colors-1);
+        font-size: 20px;
+        margin-top: -90px;
+        margin-left: 250px;
+        display: block;
+    }
+    .navigator-line{
+        display: none;
+    }
+    .navigator-line1{
+        display: none;
+    }
+    .navigator-logo{
+            width: 200px;
+            margin-top: 35px;
+            margin-left: 110px;
+            padding-left: 0px;
+            padding-top: 0px;
+    }
+    .title-nav1{
+        font-size: 30px;
+        margin-left: 70px;
+        margin-top: 170px;
+        width: 250px;
+    }
+    .title-br{
+        display: none;
+    }
+    .nav-btn-2{
+        margin-left:95px;
+        margin-top: 50px;
+    }
+    /* modal */
+    .navigatorModal{
+        position: absolute;
+        margin-top: -78px;
+        margin-left: 5px;
+        max-width:380px;
+        height: 675px;
+    }
+    .modal-nav-p{
+        width: 340px;
+        margin-top:10px;
+        margin-left:30px;
+        font-size: 14px;
+    }
+    .modal-nav{
+        font-size: 40px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    #navBtn-no {
+        margin-left: 345px;
+    }
+    .nav-btn1{
+        margin-top: 180px;
+        margin-left: -470px;
+    }
+    .navi-block-1{
+        margin-top: -35px;
+        margin-left: 500px;
+    }
+    .input-nav{
+        margin-left: 30px;
+        width:330px;
+    }
+    .input-nav1{
+        margin-left: 30px;
+        width: 330px;
+    }
+    .input-nav2{
+        margin-left: 30px;
+        width: 330px;
+    }
+    .input-nav3{
+        margin-left: 30px;
+        width: 330px;
+    }
+    .input-nav4{
+        margin-left: 30px;
+        width: 330px;
+    }
+    .input-nav5{
+        margin-left: 30px;
+        width: 330px;
+    }
+    .navi-block-2{
+        margin-top: 330px;
+        margin-left: 30px;
+    }
+    /* modal2  */
+    .navigatorModal2{
+        margin-top: -600px;
+        margin-left: 5px;
+        max-width: 380px;
+    }
+    .navigator-modal-p2{
+        width:200px;
+        font-size: 12px;
+        margin-top: 130px;
+        margin-left: 160px;
+    }
+    .navigator-image2{
+        margin-left: 10px;
+        margin-top: -50px;
+        width: 150px;
+    }
+    #navBtnNet2 {
+        margin-top: 20px;
+        font-size: 18px;
+        margin-left: 180px;
+    }
+    .p-nav{
+        font-size: 18px;
+        margin-left: 220px;
+    }
+    .nav-a{
+        margin-top: 240px;
+        margin-left: 170px;
+    }
+}
+
+
+html, body{
+    overflow-x: hidden;
+}
