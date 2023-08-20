@@ -371,7 +371,7 @@
     position: absolute;
     margin-top: -100px;
 }
-/* .navigatorModal {
+.navigatorModal {
         opacity: 0;
         animation: anim 1.5s forwards;
       }
@@ -379,7 +379,7 @@
       @keyframes anim {
         0% {opacity: 0;}
         100% {opacity: 1;}
-      } */
+      }
       /* 
       /* 
       e
@@ -824,7 +824,7 @@
         height: 300px;
         border-radius:30px;
     }
-    /* .naviBlockDiv{
+    .naviBlockDiv{
         transform: translateY(-150%);
         animation: ani 1s forwards;
       }
@@ -832,7 +832,7 @@
       @keyframes ani {
         0% {transform: translateY(-150%);}
         100% {transform: translateY(0);}
-      } */
+      }
       /* 
        /* */ 
        /*  */

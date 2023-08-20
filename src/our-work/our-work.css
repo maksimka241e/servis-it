@@ -225,7 +225,7 @@
     position: absolute;
     margin-top: -100px;
 }
-    /* .our-work-modal{
+.our-work-modal{
         opacity: 0;
         animation: anima 1.5s forwards;
       }
@@ -234,14 +234,14 @@
         0% {opacity: 0;}
         100% {opacity: 1;}
       }
-      f
+    /*   f 
       f
       f
       fof
       f
       f
       f
-      font-style: ; */
+      font-style: ; /*/
 /* разрешение под  компьютер */
 @media(max-width:1920px){
     .our-work-cont{
