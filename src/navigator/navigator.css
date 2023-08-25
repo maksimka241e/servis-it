@@ -809,8 +809,15 @@
     .navi-btn-750px{
         display: none;
     }
-
-}
+    .about-nav {
+    font-size: 23px;
+   }
+   .our-nav{
+       font-size: 23px;
+   }
+   .job-nav{
+       font-size: 23px;
+  }
 /* стили под телефон */
 @media(max-width:560px){
     .naviBlockDiv{
